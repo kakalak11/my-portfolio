@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    color: white;
+
+    /* background-image: url('background-galaxy.jpg'); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-color: black
+
+    /* 30, 87, 116 */
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
