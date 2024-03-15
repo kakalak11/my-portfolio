@@ -37,7 +37,7 @@ function animate() {
 
 // Sprite constructors
 function createCircleSprite () {
-  var circle = PIXI.RenderTexture.create( 16, 16);
+  var circle = new PIXI.RenderTexture(renderer, 16, 16);
   var graphics = new PIXI.Graphics();
   graphics.beginFill(0xFFFFFF);
   graphics.drawCircle(8, 8, 1);
