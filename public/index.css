@@ -1,13 +1,8 @@
 body {
     text-align: center;
     color: white;
-
-    /* background-image: url('background-galaxy.jpg'); */
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    background-color: black
-
-    /* 30, 87, 116 */
+    margin-top: 2rem;
 }
 
 img {
@@ -22,4 +17,25 @@ canvas {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#text {
+    display: inline-block;
+}
+
+h1 {
+    margin: 5rem 0;
+    transition: all;
+}
+
+.project-image {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.project-detail-list {
+    list-style: none;
+    text-align: left;
+    padding: auto;
 }
