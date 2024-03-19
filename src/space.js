@@ -10,11 +10,11 @@ var stage = new PIXI.Container();
 var circle = createCircleSprite();
 
 // Constants
-var numStars = 1000;
+var numStars = 3000;
 
 // Init stars
 var stars = [];
-for(var i=0; i<numStars; i++) {
+for (var i = 0; i < numStars; i++) {
   var s = createStar();
   stars.push(s);
   stage.addChild(s);
@@ -24,22 +24,22 @@ renderer.render(stage);
 // Render loop
 requestAnimationFrame(animate);
 function animate() {
-  requestAnimationFrame( animate );
+  requestAnimationFrame(animate);
   var time = Date.now() / 1000;
-  for (var i=0; i < numStars; ++i) {
+  for (var i = 0; i < numStars; ++i) {
     var s = stars[i];
-    var freq = i/numStars;
-    var ampl = i*numStars;
+    var freq = i / numStars;
+    var ampl = i * numStars;
     s.alpha = freq * Math.sin(time + ampl);
   }
   renderer.render(stage);
 }
 
 // Sprite constructors
-function createCircleSprite () {
+function createCircleSprite() {
   var circle = new PIXI.RenderTexture(renderer, 16, 16);
   var graphics = new PIXI.Graphics();
-  graphics.beginFill(0xFFFFFF);
+  graphics.beginFill(0xffffff);
   graphics.drawCircle(8, 8, 1);
   graphics.endFill();
   circle.render(graphics);
@@ -47,7 +47,7 @@ function createCircleSprite () {
 }
 
 // Element constructors
-function createStar () {
+function createStar() {
   var s = new PIXI.Sprite(circle);
   var scale = Math.random() * 2;
   s.position.x = Math.random() * renderer.width;

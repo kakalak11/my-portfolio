@@ -14,38 +14,63 @@
   </head>
 
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
-    <script src="src/space.js"></script>
+    <!-- <h1 id="animation-introduction"></h1> -->
+    <h3 id="summary">I am a front-end developer that love coding, love computer and love building applications.</h3>
+    <div class="section-title">
+      <h1>My personal projects</h1>
+    </div>
 
-    <h1 id="text"></h1>
-
-    <h3>I love coding, love computer and love building applications.</h3>
-
-    <h1>My personal projects</h1>
-
-    <div class="container">
+    <div
+      class="container panel-container animate__animated animate__fadeInLeft"
+    >
       <div class="row">
         <div class="one-third column">
-          <h2>The wild Oasis</h2>
-          <img class="project-image" src="public/oasis-project.png" />
+          <a href="https://iamkakalak-booking-project.netlify.app"
+            ><h2>The Wild Oasis</h2></a
+          >
+          <img
+            class="project-image u-max-full-width"
+            src="public/oasis-project.png"
+          />
         </div>
-        <ul class="two-thirds column project-detail-list">
-          <li>Knowledge of advanced patterns in React</li>
-          <li>Supabase as an Backend option for small/medium projects</li>
-          <li>Vite as a front-end build tools</li>
-          <li>Netlify as a free hosting service</li>
-          <li>Get to know real-world project experience in React</li>
-          <li>Styled component CSS library</li>
-          <li>Web development knowledge</li>
-        </ul>
+        <div class="two-thirds column container-vertical">
+          <ul class="project-detail-list vertical-center">
+            <li>Knowledge of advanced patterns in React</li>
+            <li>Supabase as an Backend option for small/medium projects</li>
+            <li>Vite as a front-end build tools</li>
+            <li>Netlify as a free hosting service</li>
+            <li>Get to know real-world project experience in React</li>
+            <li>Styled component CSS library</li>
+            <li>Web development knowledge</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <script>
-      addEventListener("scroll", (event) => {
-        console.log(event);
-      });
-    </script>
-    <script src="src/slideIntro.js"></script>
+    <div
+      class="container panel-container animate__animated animate__fadeInRight"
+    >
+      <div class="row">
+        <div class="one-third column">
+          <a href="https://iamkakalak-booking-project.netlify.app"
+            ><h2>Fast React Pizza</h2></a
+          >
+          <img
+            class="project-image u-max-full-width"
+            src="public/fast-react-pizza-project.png"
+          />
+        </div>
+        <div class="two-thirds column container-vertical">
+          <ul class="project-detail-list vertical-center">
+            <li>Basic usage of TailwindCSS</li>
+            <li>Redux-toolkit as a state management solution</li>
+            <li>Responsive design practice</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
+  <script src="src/space.js"></script>
+  <script src="src/slideIntro.js"></script>
 </html>

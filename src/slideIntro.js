@@ -1,4 +1,4 @@
-const element = document.getElementById("text");
+const element = document.getElementById("animation-introduction");
 let state = "goIn";
 
 let moveInClass = "animate__fadeInLeft";
