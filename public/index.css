@@ -40,20 +40,17 @@ h1 {
   padding: auto;
   margin: 0;
   font-size: 2rem;
-}
 
-.container-vertical {
-  height: 38rem;
-  position: relative;
-}
-
-.vertical-center {
-  margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding-left: 2rem;
+}
+
+.container-vertical {
+  height: 38rem;
+  position: relative;
 }
 
 .panel-container {
@@ -69,11 +66,11 @@ a {
 
 .section-title {
     width: 80vw;
-    height: max-content;
+    height: 7rem;
     transform: translate(-50%,-50%);
     left: 50%;
     position: relative;
-    background-color: #b4b1b898;
+    /* background-color: #b4b1b898; */
 }
 
 #summary {
